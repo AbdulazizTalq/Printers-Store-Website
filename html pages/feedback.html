@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> FeedBack </title>
+<meta charset="utf-8">
+<meta name= "description" content="Printers Store website" />
+<meta name="keywords" content="best printers store in UK,top 10 best printers store in UK,UK printers store,the most famous printer store,printer store,ryman printers store"/>
+<meta name= "author" content="Abdulaziz Talaq Alsolime" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="../css/styles.css"> </link>
+<script type="text/javascript" src="../scripts/script.js"></script>
+</head>
+<body>
+
+       <header>
+
+         <h2>Ryman</h2>
+
+             <div class="main_menu">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="aboutUs.html">About Us</a>
+                <a class="active" href="feedback.html">Feedback</a>
+              </div>  
+
+       </header>   
+<main>
+
+
+
+
+
+<div class="containerFeadback">
+        <div class="boxFeadback">
+          <h1> Feedback Form </h1>
+          <hr />
+           <span class="errorFeedback" id="errNameEmpty"> </span>
+           <span class="errorFeedback" id="errNameSix"> </span>
+           <span class="errorFeedback" id="errNameDigit"> </span>
+           <span class="errorFeedback" id="errPhoneEmpty"> </span>
+           <span class="errorFeedback" id="errPhoneForm"> </span>
+           <span class="errorFeedback" id="errEmailEmpty"> </span>
+           <span class="errorFeedback" id="errEmailForm"> </span>
+           <span class="errorFeedback" id="errSubject"> </span>
+           <span class="errorFeedback" id="errTopic"> </span>
+           <span class="errorFeedback" id="errFeedback"> </span>
+
+          <div>
+            <form action="process" method="post" onsubmit="return validatedFeedback();">
+              <div class="IndexFeedback"> <label> <div class="lblF"> Name: 
+                                         </div>  <input id="name" class="inputBox" type="text" name="name" placeholder="Enter your name...." onkeyup="onKeyFunction()" onfocus="handleOnFocus(this)" onblur="handleOnBlur(this)"/> </label> 
+              </div>
+               <div class="IndexFeedback"> <label> <div class="lblF"> Phone:  
+                                         </div>  <input id="phone" class="inputBox" type="text" name="phone" placeholder="Enter your phone number... " onfocus="handleOnFocus(this)" onblur="handleOnBlur(this)"/> </label> 
+              </div>
+               <div class="IndexFeedback"> <label> <div class="lblF"> Email: 
+                                         </div>  <input id="email" class="inputBox" type="text" name="email" placeholder="Enter your email address..." onfocus="handleOnFocus(this)" onblur="handleOnBlur(this)"/> </label> 
+              </div>
+              <div class="IndexFeedback"> <label> <div class="lblF"> Subject:  
+                                         </div>  <input id="subject" class="inputBox" type="text" name="subject" placeholder="Enter your subject ..." onfocus="handleOnFocus(this)" onblur="handleOnBlur(this)"/> </label> 
+              </div>
+              <div class="IndexFeedback"> <label> <div class="lblF"> Topic: 
+                                         </div>  
+                            <select id="topic" class="inputBox" name="topic" onfocus="handleOnFocus(this)" onblur="handleOnBlur(this)">
+                              <option>Please select a topic...</option>
+                              <option> Suggestion </option>
+                              <option> Complaint </option>
+                              <option> Idea </option>
+                              <option> Help </option>
+                            </select>
+                    </label>
+              </div>
+ <div class="IndexFeedback"><div class="wordFeedback"> Feedback:             
+             </div> <textarea id="feedback" rows="15" cols="100" class="inputBox" name="feedback" onfocus="handleOnFocus(this)" onblur="handleOnBlur(this)"></textarea>
+              </div>
+
+              <div class="IndexFeedback"> <input id="submitBtn" type="submit" value="Send" /> </div>
+              
+</form>
+    </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+</main>
+       <footer>
+ <div Class="txt">
+	     <h2>Copyright 2021 © Ryman</h2>
+         <p>Coder And Designer </p>
+         <br>
+         <p>Abdulaziz Talaq Alsolime</p>
+</div>
+       </footer>
+
+</body>
+</html>	
